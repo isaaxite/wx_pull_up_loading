@@ -1,4 +1,4 @@
-<import src="/pullUpLoading/index.wxml"/>
+<import src="/pullUpLoading/main/index.wxml"/>
 
 <scroll-view scroll-y="true" bindscrolltolower="pullUpLoadingEvent">
 	<view style="padding: 30rpx;border: 2rpx solid;" wx:for="{{list}}" wx:key="{{index}}">{{item}}</view>

@@ -1,17 +1,16 @@
 const app = getApp();
-const pullUpLoading = require("../../pullUpLoading/index.js");
+const { extend, pullUpLoading } = require("../../pullUpLoading/index.js");
 
-Page(Object.assign(pullUpLoading, {
+Page(extend(pullUpLoading, {
 	data: {
 		list: _createData(20),
-		pullUpLoading: { isShow: false }
 	},
 	onLoad() {
 		console.log("page start");
 	},
 	fetchData() {
 		const _this = this;
-		const delay = 2000;
+		const delay = 3000;
 
 		return new Promise((resolve, reject) => {
 			setTimeout(() => {
@@ -21,10 +20,8 @@ Page(Object.assign(pullUpLoading, {
 	},
 	pullUpLoadingEvent() {
 		const _this = this;
-		const minDelay = 3000;
-		const startTime = Date.now();
 
-		_this.startPullUpLoading(() => {
+		_this.startPullUpLoading(startTime => {
 			_this.fetchData()
 			.then(_list => {
 				_this.setData({ list: [..._this.data.list, ..._list] });
