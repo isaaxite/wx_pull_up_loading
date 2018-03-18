@@ -1,6 +1,9 @@
 <import src="/pullUpLoading/main/index.wxml"/>
 
 <scroll-view scroll-y="true" bindscrolltolower="pullUpLoadingEvent">
+	<view class="__isaac-spinner __isaac-spinner-active">
+		<view class="__isaac-spinner-body"><view></view></view>
+	</view>
 	<view style="padding: 30rpx;border: 2rpx solid;" wx:for="{{list}}" wx:key="{{index}}">{{item}}</view>
 	 <template is="pull-up-loading" data="{{ ...pullUpLoading }}"></template> 
 </scroll-view>

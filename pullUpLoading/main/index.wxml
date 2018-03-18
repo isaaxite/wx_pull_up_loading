@@ -1,9 +1,5 @@
 <template name="pull-up-loading">
-  <view class="isaac-spinner {{ isShow ? 'isaac-spinner-active' : ''}}">
-		<view class='isaac-spinner-body'>{{ test }}
-			<view class="bounce1"></view>
-			<view class="bounce2"></view>
-			<view class="bounce3"></view>
-		</view>
-  </view>
+  <view class="__isaac-spinner {{ isShow ? '__isaac-spinner-active' : ''}}">
+		<view class="__isaac-spinner-body"><view></view></view>
+	</view>
 </template>
