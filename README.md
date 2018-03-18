@@ -56,7 +56,7 @@
 
 ## 贡献
 
-如果你有好的意见或建议，欢迎给我们提 [issue] 或 [PR]，为优化 [ZanUI-Weapp] 贡献力量
+如果你有好的意见或建议，欢迎提 [issue] 或 [PR]，为优化本项目贡献力量
 
 [issue]: https://github.com/issaxite/wx_pull_up_loading/issues/new
 [PR]: https://github.com/issaxite/wx_pull_up_loading/compare
