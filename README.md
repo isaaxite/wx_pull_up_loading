@@ -6,7 +6,9 @@
 
 ## 下载
 
-`https://github.com/issaxite/wx_pull_up_loading`
+```
+https://github.com/issaxite/wx_pull_up_loading
+```
 
 
 
@@ -53,7 +55,13 @@
    	```
 	4.2 然后，使用`extend`合并当前文件对象与`pullUpLoading`。具体可以参考pages/index/index.js；
 
-	4.3 在当前页面中添加3.2中设置的触底回调事件函数
+	4.3 在当前页面中添加3.2中设置的触底回调事件函数;
+
+	4.4 触底回调事件函数内部添加上拉加载的逻辑代码：
+	```js
+	sdsd
+	
+	```
 
 5. 具体可以参考`/pages/index`下的使用。
 
