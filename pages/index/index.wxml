@@ -1,6 +1,15 @@
 <import src="/pullUpLoading/main/index.wxml"/>
 
 <scroll-view scroll-y="true" bindscrolltolower="pullUpLoadingEvent">
-	<view style="padding: 30rpx;border: 2rpx solid;" wx:for="{{list}}" wx:key="{{index}}">{{item}}</view>
-	 <template is="pull-up-loading" data="{{ ...pullUpLoading }}"></template> 
+	<!-- <view style="padding: 30rpx;border: 2rpx solid;" wx:for="{{list}}" wx:key="{{index}}">{{item}}</view> -->
+	<view class="skeleton-group" wx:for="{{list}}" wx:key="{{index}}">
+		<view class="skeleton-group-cover"></view>
+		<view class="skeleton-group-text">
+			<view class="skeleton-group-title"></view>
+			<view class="skeleton-group-desc">
+				<view></view>
+			</view>
+		</view>
+	</view>
+	<template is="pull-up-loading" data="{{ ...pullUpLoading }}"></template> 
 </scroll-view>

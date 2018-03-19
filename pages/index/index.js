@@ -35,10 +35,6 @@ Page(extend(pullUpLoading, {
 }));
 
 function _createData(count) {
-	let data = [];
-	for (let i = 0; i < count; i++) {
-		data.push(`list item ${i + 1}`);
-	}
-
+	let data = new Array(count);
 	return data;
 }
