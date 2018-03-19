@@ -67,6 +67,7 @@
 [PR]: https://github.com/issaxite/wx_pull_up_loading/compare
 [MIT]: http://opensource.org/licenses/MIT
 [MIT]: http://opensource.org/licenses/MIT
+[触底回调事件]: https://mp.weixin.qq.com/debug/wxadoc/dev/component/scroll-view.html
 [微信开发工具]: https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html
 [小程序简易教程]: https://mp.weixin.qq.com/debug/wxadoc/dev/
 [小程序框架介绍]: https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html
