@@ -59,9 +59,27 @@ https://github.com/issaxite/wx_pull_up_loading
 
 	4.4 触底回调事件函数内部添加上拉加载的逻辑代码：
 	```js
-	sdsd
+	pullUpLoadingEvent() {
+		const _this = this;
+
+		_this.startPullUpLoading(() => {
+			_this.fetchData()
+			.then(_list => {
+				// render data
+				_this.stopPullUpLoading();
+			})
+			.catch(errMsg => {
+				console.log(errMsg);
+			});
+		});
+	}
 	
 	```
+	以上代码，设计到两个`pullUpLoad`必要的内部函数：
+	1. `_this.startPullUpLoading(callback)`
+		开始执行上拉加载动画，数据获取和渲染逻辑，必须在callback内；
+	2. `_this.stopPullUpLoading()`
+		停止上拉加载动画；
 
 5. 具体可以参考`/pages/index`下的使用。
 
