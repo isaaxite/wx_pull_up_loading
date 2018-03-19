@@ -47,6 +47,7 @@
 
    ```xml
    <scroll-view scroll-y="true" bindscrolltolower="pullUpLoadingEvent">
+	<!-- scroll-view-item... -->
 	<template is="pull-up-loading" data="{{ ...pullUpLoading }}"></template> 
    </scroll-view>
    ```
