@@ -21,31 +21,23 @@
 
 1. 复制本项下`pullUpLoading`目录；
 
-2. 在目标页面的js文件中引入`pullUpLoading`下的`index.js`文件，该文件包含两个模块：`extend`，`pullUpLoading`
-
-   ```js
-   const { extend, pullUpLoading } = require("../../pullUpLoading/index.js");
-   ```
-
-   然后，使用`extend`合并当前文件对象与`pullUpLoading`。具体可以参考pages/index/index.js；
-
-3. 在app.wxss中引入组件的wxss文件：
+2. 在app.wxss中引入组件的wxss文件：
 
    ```css
    @import './pullUpLoading/main/index.wxss';
    ```
 
-4. 在目标wxml页面引入组件：
+3. 在目标wxml页面引入组件：
 
-   4.1 引入组件：
+   3.1 引入组件：
 
    ```xml
    <import src="/pullUpLoading/main/index.wxml"/>
    ```
 
-   4.2 使用组件：
+   3.2 使用组件：
 	
-	如下，首先是需要一个`scroll-view`作为基础，绑定一个[触底回调事件]，接着是在`scroll-view`内部的底部
+	如下，首先是需要一个`scroll-view`作为基础，绑定一个[触底回调事件]，接着是在`scroll-view`内部的底部使用`template`引入组件，`template`的参数是固定的。
 
    ```xml
    <scroll-view scroll-y="true" bindscrolltolower="pullUpLoadingEvent">
@@ -53,6 +45,13 @@
 	<template is="pull-up-loading" data="{{ ...pullUpLoading }}"></template> 
    </scroll-view>
    ```
+4. 在目标页面的js文件中引入`pullUpLoading`下的`index.js`文件，该文件包含两个模块：`extend`，`pullUpLoading`
+
+   ```js
+   const { extend, pullUpLoading } = require("../../pullUpLoading/index.js");
+   ```
+
+   然后，使用`extend`合并当前文件对象与`pullUpLoading`。具体可以参考pages/index/index.js；
 5. 具体可以参考`/pages/index`下的使用。
 
 
