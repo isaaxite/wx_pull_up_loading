@@ -45,7 +45,7 @@
 
    4.2 使用组件：
 	
-	如下，首先是需要一个`scroll-view`作为基础，绑定一个[触底回调事件]
+	如下，首先是需要一个`scroll-view`作为基础，绑定一个[触底回调事件]，接着是在`scroll-view`内部的底部
 
    ```xml
    <scroll-view scroll-y="true" bindscrolltolower="pullUpLoadingEvent">
