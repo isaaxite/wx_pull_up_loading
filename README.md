@@ -46,12 +46,15 @@
    </scroll-view>
    ```
 4. 在目标页面的js文件中引入`pullUpLoading`下的`index.js`文件，该文件包含两个模块：`extend`，`pullUpLoading`
+	
+	4.1 引入`pullUpLoading`组件的js文件
+   	```js
+   	const { extend, pullUpLoading } = require("../../pullUpLoading/index.js");
+   	```
+	4.2 然后，使用`extend`合并当前文件对象与`pullUpLoading`。具体可以参考pages/index/index.js；
 
-   ```js
-   const { extend, pullUpLoading } = require("../../pullUpLoading/index.js");
-   ```
+	4.3 在当前页面中添加3.2中设置的触底回调事件函数
 
-   然后，使用`extend`合并当前文件对象与`pullUpLoading`。具体可以参考pages/index/index.js；
 5. 具体可以参考`/pages/index`下的使用。
 
 
