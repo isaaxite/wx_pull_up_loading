@@ -36,7 +36,7 @@
 
 3. 在app.wxss中引入组件的wxss文件：
 
-   ```js
+   ```css
    @import './pullUpLoading/main/index.wxss';
    ```
 
@@ -44,14 +44,17 @@
 
    4.1 引入组件：
 
-   ```js
+   ```xml
    <import src="/pullUpLoading/main/index.wxml"/>
    ```
 
    4.2 使用组件：
 
-   ```js
-   <template is="pull-up-loading" data="{{ ...pullUpLoading }}"></template> 
+   ```xml
+   <scroll-view scroll-y="true" bindscrolltolower="pullUpLoadingEvent">
+      <!-- scroll-view-item -->
+	   <template is="pull-up-loading" data="{{ ...pullUpLoading }}"></template> 
+   </scroll-view>
    ```
 
 5. 具体可以参考`/pages/index`下的使用。
