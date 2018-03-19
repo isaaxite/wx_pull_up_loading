@@ -14,6 +14,12 @@
 
 `git clone`该项目，并使用微信开发工具打开该项目，直接运行即可，示例代码在`/pages/index/`目录下。
 
+<p align="center">
+
+​	<img src="./pages/asset/image/pull_up_loading.gif">
+
+</p>
+
 
 
 ## 使用
