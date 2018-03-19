@@ -52,13 +52,12 @@
 
    ```xml
    <scroll-view scroll-y="true" bindscrolltolower="pullUpLoadingEvent">
-      <!-- scroll-view-item -->
-	   <template is="pull-up-loading" data="{{ ...pullUpLoading }}"></template> 
+      	scroll-view-item...
+	<template is="pull-up-loading" data="{{ ...pullUpLoading }}"></template> 
    </scroll-view>
    ```
 
 5. 具体可以参考`/pages/index`下的使用。
-
 
 
 ## 开源协议
