@@ -14,12 +14,7 @@
 
 `git clone`该项目，并使用[微信开发工具]打开该项目，直接运行即可，示例代码在`/pages/index/`目录下。
 
-<p align="center">
-
-​	<img src="./pages/asset/image/pull_up_loading.gif">
-
-</p>
-
+<p align="center"><img src="./pages/asset/image/pull_up_loading.gif"></p>
 
 
 ## 使用
@@ -52,7 +47,6 @@
 
    ```xml
    <scroll-view scroll-y="true" bindscrolltolower="pullUpLoadingEvent">
-      	scroll-view-item...
 	<template is="pull-up-loading" data="{{ ...pullUpLoading }}"></template> 
    </scroll-view>
    ```
