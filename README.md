@@ -12,7 +12,7 @@
 
 ## 预览
 
-`git clone`该项目，并使用微信开发工具打开该项目，直接运行即可，示例代码在`/pages/index/`目录下。
+`git clone`该项目，并使用[微信开发工具]打开该项目，直接运行即可，示例代码在`/pages/index/`目录下。
 
 <p align="center">
 
@@ -68,5 +68,7 @@
 [issue]: https://github.com/issaxite/wx_pull_up_loading/issues/new
 [PR]: https://github.com/issaxite/wx_pull_up_loading/compare
 [MIT]: http://opensource.org/licenses/MIT
+[MIT]: http://opensource.org/licenses/MIT
+[微信开发工具]: https://mp.weixin.qq.com/debug/wxadoc/dev/devtools/download.html
 [小程序简易教程]: https://mp.weixin.qq.com/debug/wxadoc/dev/
 [小程序框架介绍]: https://mp.weixin.qq.com/debug/wxadoc/dev/framework/MINA.html
