@@ -44,6 +44,8 @@
    ```
 
    4.2 使用组件：
+	
+	如下，首先是需要一个`scroll-view`作为基础，绑定一个[触底回调事件]
 
    ```xml
    <scroll-view scroll-y="true" bindscrolltolower="pullUpLoadingEvent">
@@ -51,7 +53,6 @@
 	<template is="pull-up-loading" data="{{ ...pullUpLoading }}"></template> 
    </scroll-view>
    ```
-
 5. 具体可以参考`/pages/index`下的使用。
 
 
